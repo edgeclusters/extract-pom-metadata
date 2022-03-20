@@ -25,8 +25,8 @@ runs:
 
   steps:
     - name: Get application metadata from pom.xml
-      shell: bash
       id: metadata
+      shell: bash
       run: |
         # export APP_GROUP_ID=$(mvn --file ${{ inputs.pomDir }} help:evaluate -Dexpression=project.groupId -q -DforceStdout)
         # export APP_ARTIFACT_ID=$(mvn --file ${{ inputs.pomDir }} help:evaluate -Dexpression=project.artifactId -q -DforceStdout)
